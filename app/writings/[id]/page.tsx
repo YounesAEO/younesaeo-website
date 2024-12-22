@@ -2,6 +2,10 @@ import { Nav } from '../../components/nav';
 import { Footer } from '../../components/footer';
 import Link from 'next/link';
 
+export async function generateStaticParams() {
+	return Object.keys(posts).map((id) => ({ id }));
+}
+
 const posts = {
 	'clean-architecture': {
 		title: 'Clean Architecture in Modern Web Development',
