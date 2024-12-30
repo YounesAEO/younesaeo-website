@@ -57,9 +57,33 @@ export default function SideQuests() {
 							href="https://www.getyourguide.com/phnom-penh-l273/cambodia-shooting-range-phnom-penh-sightseeing-tour-t686055/?ranking_uuid=398cca4a-276e-4d9e-8637-4bc52a7d65fc"
 						/>
 					</li>
-					<li>* climb mount everest (if rich and single)</li>
 					<li>* ride a bicycle from france to morocco</li>
 					<li>* have a coffee with 100 strangers</li>
+					<li>
+						* ski from{' '}
+						<OldLink
+							text="l'aiguille rouge"
+							href="https://g.co/kgs/hxXUWUr"
+						/>
+					</li>
+					<li>
+						* watch all{' '}
+						<OldLink
+							text="best picture award winners"
+							href="https://www.imdb.com/list/ls009480135/"
+						/>
+					</li>
+					<li>* skinny dip</li>
+					<li>
+						* scuba dive in the{' '}
+						<OldLink
+							text="great barrier reef"
+							href="https://maps.app.goo.gl/tHFPYnaUgLXjouZ9A"
+						/>
+					</li>
+					<li>* finish my 100 book list</li>
+					<li>* travel with a stranger</li>
+					<li>* do an improv class</li>
 				</ul>
 			</section>
 			<Footer />
