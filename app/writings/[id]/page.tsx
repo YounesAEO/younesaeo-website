@@ -1,5 +1,3 @@
-import { Nav } from '../../components/nav';
-import { Footer } from '../../components/footer';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
@@ -31,25 +29,21 @@ export default function BlogPost({ params }: { params: { id: string } }) {
 	}
 
 	return (
-		<>
-			<Nav />
-			<article className="mb-16">
-				<h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-				<div className="flex items-center space-x-4 text-sm text-gray-600 mb-8">
-					<time>{post.date}</time>
-					<span>·</span>
-					<span>{post.readTime}</span>
-				</div>
-				<div className="prose max-w-none">
-					<p>{post.content}</p>
-				</div>
-				<Link
-					href="/writings"
-					className="mt-8 inline-block text-sm font-medium hover:underline">
-					← Back to all posts
-				</Link>
-			</article>
-			<Footer />
-		</>
+		<article className="mb-16">
+			<h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+			<div className="flex items-center space-x-4 text-sm text-gray-600 mb-8">
+				<time>{post.date}</time>
+				<span>·</span>
+				<span>{post.readTime}</span>
+			</div>
+			<div className="prose max-w-none">
+				<p>{post.content}</p>
+			</div>
+			<Link
+				href="/writings"
+				className="mt-8 inline-block text-sm font-medium hover:underline">
+				← Back to all posts
+			</Link>
+		</article>
 	);
 }

@@ -1,6 +1,4 @@
 'use client';
-import { Nav } from '../components/nav';
-import { Footer } from '../components/footer';
 import { useState } from 'react';
 import { ArrowUpDown, ExternalLink } from 'lucide-react';
 
@@ -100,65 +98,58 @@ export default function Projects() {
 	const sortedProjects = isNewestFirst ? projects : [...projects].reverse();
 
 	return (
-		<>
-			<Nav />
-			<section className="mb-16">
-				<div className="flex justify-between items-center mb-8">
-					<h1 className="text-4xl font-bold">Projects</h1>
-					<button
-						onClick={() => setIsNewestFirst(!isNewestFirst)}
-						className=" flex items-center gap-2 px-4 py-2 bg-orange-100 rounded hover:bg-orange-200 transition-colors">
-						<ArrowUpDown className="h-4 w-4" />
-						Sort by {isNewestFirst ? 'oldest' : 'newest'} first
-					</button>
-				</div>
+		<section className="mb-16">
+			<div className="flex justify-between items-center mb-8">
+				<h1 className="text-4xl font-bold">Projects</h1>
+				<button
+					onClick={() => setIsNewestFirst(!isNewestFirst)}
+					className="flex items-center gap-2 px-4 py-2 bg-orange-100 rounded hover:bg-orange-200 transition-colors">
+					<ArrowUpDown className="h-4 w-4" />
+					Sort by {isNewestFirst ? 'oldest' : 'newest'} first
+				</button>
+			</div>
 
-				<div className="bg-gradient-to-r from-orange-100 to-transparent p-4 mb-8 rounded">
-					<p className="text-lg">
-						Most people share their highlights here, and there's
-						nothing wrong with that. But I made this page for me.
-						It's a reminder of where I started and how far I've
-						come. Some still are a work in progress, and some are
-						just shitty ideas that I never finished. But they're all
-						here.
-					</p>
-				</div>
+			<div className="bg-gradient-to-r from-orange-100 to-transparent p-4 mb-8 rounded">
+				<p className="text-lg">
+					List of stuff I did or I'm still doing. I just put
+					everything in here. A reminder of all the things I built or
+					participated in.
+				</p>
+			</div>
 
-				<div className="space-y-12">
-					{sortedProjects.map((project, index) => (
-						<div key={index} className="border-b pb-8">
-							<div className="flex items-center gap-2 mb-2">
-								<h2 className="text-2xl font-bold">
-									{project.title}
-								</h2>
-								{project.link && (
-									<a
-										href={project.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="hover:text-orange-500 transition-colors">
-										<ExternalLink className="h-5 w-5" />
-									</a>
-								)}
-							</div>
-							<p className="text-sm text-gray-600 mb-4">
-								{project.type}
-							</p>
-							<p className="mb-4">{project.description}</p>
-							<div className="flex flex-wrap gap-2">
-								{project.tech.map((tech, techIndex) => (
-									<span
-										key={techIndex}
-										className="bg-gray-100 px-3 py-1 text-sm rounded">
-										{tech}
-									</span>
-								))}
-							</div>
+			<div className="space-y-12">
+				{sortedProjects.map((project, index) => (
+					<div key={index} className="border-b pb-8">
+						<div className="flex items-center gap-2 mb-2">
+							<h2 className="text-2xl font-bold">
+								{project.title}
+							</h2>
+							{project.link && (
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-orange-500 transition-colors">
+									<ExternalLink className="h-5 w-5" />
+								</a>
+							)}
 						</div>
-					))}
-				</div>
-			</section>
-			<Footer />
-		</>
+						<p className="text-sm text-gray-600 mb-4">
+							{project.type}
+						</p>
+						<p className="mb-4">{project.description}</p>
+						<div className="flex flex-wrap gap-2">
+							{project.tech.map((tech, techIndex) => (
+								<span
+									key={techIndex}
+									className="bg-gray-100 px-3 py-1 text-sm rounded">
+									{tech}
+								</span>
+							))}
+						</div>
+					</div>
+				))}
+			</div>
+		</section>
 	);
 }
