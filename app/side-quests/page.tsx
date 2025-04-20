@@ -90,6 +90,9 @@ export default function SideQuests() {
 		{
 			text: 'build my dream computer',
 		},
+		{
+			text: "solve a rubik's cube in under 30 seconds",
+		},
 	];
 
 	return (
