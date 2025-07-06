@@ -5,19 +5,12 @@ export async function generateStaticParams() {
 }
 
 const posts = {
-	'clean-architecture': {
-		title: 'Clean Architecture in Modern Web Development',
+	'motorbike-begins': {
+		title: 'How I Started Riding Motorbikes',
 		content:
-			'This is a placeholder for the full blog post about Clean Architecture in Modern Web Development.',
+			'This is a placeholder for the full blog post about How I Started Riding Motorbikes.',
 		date: '2023-12-15',
 		readTime: '5 min read',
-	},
-	'future-of-computer-vision': {
-		title: 'The Future of Computer Vision',
-		content:
-			'This is a placeholder for the full blog post about The Future of Computer Vision.',
-		date: '2023-12-01',
-		readTime: '8 min read',
 	},
 };
 

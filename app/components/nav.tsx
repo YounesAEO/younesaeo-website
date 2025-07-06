@@ -9,10 +9,6 @@ export function Nav() {
 						home
 					</Link>
 					<span>·</span>
-					<Link href="/projects" className="hover:underline">
-						projects
-					</Link>
-					<span>·</span>
 					{/* <Link href="/writings" className="hover:underline">
 						writings
 					</Link>
@@ -23,6 +19,10 @@ export function Nav() {
 					<span>·</span>
 					<Link href="/questions" className="hover:underline">
 						questions
+					</Link>
+					<span>·</span>
+					<Link href="/wrappers" className="hover:underline">
+						wrappers
 					</Link>
 				</div>
 			</div>

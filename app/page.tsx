@@ -66,12 +66,12 @@ export default function Home() {
 								href="https://lastartupstation.co"
 								text="the biggest startup incubators"
 							/>{' '}
-							in africa. Moved to Paris. Now, I'm working for{' '}
+							in Africa. Moved to Paris. Now, I'm working for{' '}
 							<OldLink
 								href="https://choosemycompany.com"
 								text="ChooseMyCompany"
 							/>{' '}
-							and building cool stuff.
+							and building gpt wrappers.
 						</p>
 					</div>
 					<div>

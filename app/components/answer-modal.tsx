@@ -67,7 +67,9 @@ export function AnswerModal({
 				ref={modalRef}
 				className="bg-white border border-gray-200 p-6 rounded w-full max-w-md mx-4">
 				<div className="flex justify-between items-center mb-4">
-					<h3 className="text-lg font-mono">Hit me up your answer</h3>
+					<h3 className="text-lg font-mono">
+						Hit me up with your answer
+					</h3>
 					<button
 						onClick={onClose}
 						className="p-1 hover:bg-gray-100 rounded-full">

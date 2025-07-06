@@ -1,3 +1,4 @@
+import CopyEmail from '../components/copy-email';
 import OldLink from '../components/old-link';
 
 export default function SideQuests() {
@@ -102,13 +103,17 @@ export default function SideQuests() {
 			</h1>
 			<div className="bg-gradient-to-r from-orange-100 to-transparent p-4 mb-8 rounded">
 				<p className="text-lg">
-					Just like video games, these are things that aren't
-					necessarily bringing me closer to the big goals. But, I'd be
-					genuinely sad if I end up not doing them. These are usually
-					things that I saw someone else do and thought{' '}
+					Life is a video game and what are video games without side
+					quests ? These are usually things that I saw someone else do
+					and thought{' '}
 					<span className="font-bold">
 						"HELL YEAH, THIS IS SICK !"
 					</span>
+				</p>
+
+				<p className="text-sm mt-6">
+					* I wanna get to a 100 quests, so if you've got ideas,{' '}
+					<CopyEmail text="drop me a message !" className="inline" />
 				</p>
 			</div>
 			<ul className="space-y-4 text-lg">

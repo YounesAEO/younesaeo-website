@@ -6,19 +6,18 @@ const questions = [
 	},
 	{
 		content:
-			'if this was your last year and you had to make yourself happy, what would you do?',
+			'if this was your last year and you had to make yourself happy, what would you do ?',
 	},
 	{
 		content:
-			"if you had a billion dollars in the bank, what would you actually work on? why can't you do it now?",
+			"if you had a billion dollars in the bank, what would you actually work on ? why can't you do it now ?",
 	},
 	{
 		content:
 			"what was the last thing that didn't let you sleep for nights ?",
 	},
 	{
-		content:
-			'what are the things in your life that you are most afraid of doing ?',
+		content: 'what would heaven be like for you ?',
 	},
 	{
 		content: 'what are you interested in lately ?',
@@ -54,9 +53,9 @@ const QuestionsPage = () => {
 					</i>
 					<br />
 					<br />
-					People collect cars, watches, stamps. I like collecting
-					questions. Here are the top 10 questions I like asking
-					recently.
+					Some collect vintage cars. Others collect watches. I collect
+					great questions like they're infinity stones. These are my
+					current top 10 questions.
 				</p>
 			</div>
 			<ul className="space-y-4 text-lg">

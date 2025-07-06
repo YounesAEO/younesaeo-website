@@ -1,27 +1,12 @@
-'use client';
-import { useState } from 'react';
-import { Toast } from './toast';
+import CopyEmail from './copy-email';
 
 export function Footer() {
-	const [showToast, setShowToast] = useState(false);
-
-	const handleEmailClick = (e: React.MouseEvent) => {
-		e.preventDefault();
-		navigator.clipboard.writeText('y.abouelomoum09@gmail.com');
-		setShowToast(true);
-		setTimeout(() => setShowToast(false), 2000);
-	};
-
 	return (
 		<footer className="bottom-0 border-t py-4">
 			<div className="max-w-4xl mx-auto px-4">
 				<div className="flex flex-col items-center space-y-4">
 					<div className="flex space-x-6">
-						<a
-							onClick={handleEmailClick}
-							className="hover:underline cursor-pointer">
-							email
-						</a>
+						<CopyEmail text="email" />
 						<a
 							href="https://linkedin.com/in/younes-abou"
 							className="hover:underline">
@@ -39,12 +24,11 @@ export function Footer() {
 						</a>
 					</div>
 					<p className="text-sm text-gray-600">
-						© {new Date().getFullYear()} Younes Abou El Omoum. All
-						rights reserved.
+						© {new Date().getFullYear()} Younes AEO. All rights
+						reserved.
 					</p>
 				</div>
 			</div>
-			<Toast message="email copied to clipboard!" isVisible={showToast} />
 		</footer>
 	);
 }

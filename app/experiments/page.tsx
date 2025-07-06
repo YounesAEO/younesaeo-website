@@ -2,27 +2,19 @@ import Link from 'next/link';
 
 const posts = [
 	{
-		id: 'clean-architecture',
-		title: 'Clean Architecture in Modern Web Development',
+		id: 'motorbike-begins',
+		title: 'How I Started Riding Motorbikes',
 		excerpt:
-			'Exploring the principles of clean architecture and how they can be applied to modern web applications...',
+			'Exploring the principles of motorcycle riding and the lessons learned along the way...',
 		date: '2023-12-15',
 		readTime: '5 min read',
 	},
-	{
-		id: 'future-of-computer-vision',
-		title: 'The Future of Computer Vision',
-		excerpt:
-			'Discussing the latest trends and developments in computer vision technology...',
-		date: '2023-12-01',
-		readTime: '8 min read',
-	},
 ];
 
-export default function Writings() {
+export default function Experiments() {
 	return (
 		<section className="mb-16">
-			<h1 className="text-4xl font-bold mb-8">Writings</h1>
+			<h1 className="text-4xl font-bold mb-8">Experiments</h1>
 			<div className="space-y-12">
 				{posts.map((post) => (
 					<article key={post.id} className="border-b pb-8">
