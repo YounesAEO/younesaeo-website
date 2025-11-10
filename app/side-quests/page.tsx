@@ -4,6 +4,10 @@ import OldLink from '../components/old-link';
 export default function SideQuests() {
 	const quests = [
 		{
+			text: 'learn to ride a motorbike',
+			done: true,
+		},
+		{
 			text: "play the twelve variations of mozart's ",
 			link: {
 				text: 'twinkle twinkle little star',
@@ -12,7 +16,13 @@ export default function SideQuests() {
 		},
 		{ text: 'fly a plane' },
 		{ text: 'learn swimming (the right way)' },
-		{ text: 'skydive' },
+		{
+			text: 'skydive in ',
+			link: {
+				text: 'dubai',
+				href: 'https://www.youtube.com/watch?v=bFIB05LGtMs',
+			},
+		},
 		{
 			text: 'bungee jump in ',
 			link: {
@@ -38,7 +48,7 @@ export default function SideQuests() {
 			},
 		},
 		{ text: 'ride a bicycle from france to morocco' },
-		{ text: 'have a coffee with 100 strangers' },
+		{ text: 'have a coffee with 100 strangers (3/100)' },
 		{
 			text: 'ski from ',
 			link: {
@@ -61,7 +71,7 @@ export default function SideQuests() {
 				href: 'https://maps.app.goo.gl/tHFPYnaUgLXjouZ9A',
 			},
 		},
-		{ text: 'finish my 100 book list' },
+		{ text: 'read 100 books in 10 years (3/100)' },
 		{ text: 'travel with a stranger' },
 		{ text: 'do an improv class' },
 		{
@@ -118,7 +128,9 @@ export default function SideQuests() {
 			</div>
 			<ul className="space-y-4 text-lg">
 				{quests.map((quest, index) => (
-					<li key={index}>
+					<li
+						key={index}
+						className={quest.done ? 'line-through' : ''}>
 						* {quest.text}
 						{quest.link && (
 							<OldLink

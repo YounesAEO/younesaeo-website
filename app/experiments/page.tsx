@@ -3,9 +3,9 @@ import Link from 'next/link';
 const posts = [
 	{
 		id: 'motorbike-begins',
-		title: 'How I Started Riding Motorbikes',
+		title: 'On becoming a motorbike rider',
 		excerpt:
-			'Exploring the principles of motorcycle riding and the lessons learned along the way...',
+			'From a silly challenge in late night party to my first motorbike trip in Morocco...',
 		date: '2023-12-15',
 		readTime: '5 min read',
 	},

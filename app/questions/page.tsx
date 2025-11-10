@@ -20,10 +20,11 @@ const questions = [
 		content: 'what would heaven be like for you ?',
 	},
 	{
-		content: 'what are you interested in lately ?',
+		content: "what is one thing you didn't expect to learn this year ?",
 	},
 	{
-		content: 'what have you been thinking about lately ?',
+		content:
+			"when you have time to wonder what's a thought or idea you regularly find yourself going back to because you find it so interesting ?",
 	},
 	{
 		content:
