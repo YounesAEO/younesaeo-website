@@ -48,7 +48,7 @@ export default function SideQuests() {
 			},
 		},
 		{ text: 'ride a bicycle from france to morocco' },
-		{ text: 'have a coffee with 100 strangers (3/100)' },
+		{ text: 'have a coffee with 100 strangers (8/100)' },
 		{
 			text: 'ski from ',
 			link: {
@@ -103,6 +103,9 @@ export default function SideQuests() {
 		},
 		{
 			text: "solve a rubik's cube in under 30 seconds",
+		},
+		{
+			text: "spend new year's eve in times square",
 		},
 	];
 

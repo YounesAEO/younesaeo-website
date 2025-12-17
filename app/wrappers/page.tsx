@@ -1,6 +1,5 @@
 'use client';
-import { useState } from 'react';
-import { ArrowUpDown, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
 const wrappers = [
@@ -9,6 +8,12 @@ const wrappers = [
 		description:
 			"Drop a name of a badass founder and get a timeline of their life. It's like a Wikipedia page, but cooler.",
 		link: 'https://herotimeline.com/',
+	},
+	{
+		title: 'AiMongus',
+		description:
+			"4 crewmates, 1 imposter. Except, all players are AIs. Watch the chaos unfold as they try to figure out who's sus.",
+		link: 'https://aimongus.vercel.app/',
 	},
 ];
 
