@@ -14,7 +14,7 @@ const questions = [
 	},
 	{
 		content:
-			"what was the last thing that didn't let you sleep for nights ?",
+			'if you had to introduce yourself without mentioning your occupation, your ethnicity, your religion, where you grew up, what your hobbies are, and all those superficial markers we use in our day to day, how would you describe yourself ?',
 	},
 	{
 		content: 'what would heaven be like for you ?',
@@ -32,7 +32,7 @@ const questions = [
 	},
 	{
 		content:
-			'have you ever lost a love thought it would last ? What happened ?',
+			'have you ever lost a love thought it would last ? what happened ?',
 	},
 	{
 		content: 'what do you feel is missing in your life right now ?',

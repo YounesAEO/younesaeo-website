@@ -39,7 +39,7 @@ export default function Wrappers() {
 						className="mt-4 self-center mx-auto"
 					/>
 					<br />
-					This is where I put wrappers I wrapped.
+					This is where I drop wrappers like how singers drop songs.
 				</p>
 			</div>
 
