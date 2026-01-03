@@ -48,7 +48,7 @@ export default function SideQuests() {
 			},
 		},
 		{ text: 'ride a bicycle from france to morocco' },
-		{ text: 'have a coffee with 100 strangers (9/100)' },
+		{ text: 'have a coffee with 100 strangers (13/100)' },
 		{
 			text: 'ski from ',
 			link: {
