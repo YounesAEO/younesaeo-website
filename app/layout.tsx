@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { JetBrains_Mono } from 'next/font/google';
-import { Nav } from './components/nav';
-import { Footer } from './components/footer';
+import { LayoutChrome } from './components/layout-chrome';
 
 import './globals.css';
 
@@ -41,13 +40,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={jetbrainsMono.className}>
-				<div className="min-h-screen flex flex-col">
-					<Nav />
-					<main className="max-w-4xl mx-auto px-4 py-8 flex-grow">
-						{children}
-					</main>
-					<Footer />
-				</div>
+				<LayoutChrome>{children}</LayoutChrome>
 			</body>
 		</html>
 	);
