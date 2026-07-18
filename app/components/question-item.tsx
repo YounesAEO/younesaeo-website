@@ -22,7 +22,7 @@ const QuestionItem = ({ question }: { question: string }) => {
 				'service_95jgtlj',
 				'template_a34lcgv',
 				templateParams,
-				'oiYlucZGizUgrcjeA'
+				'oiYlucZGizUgrcjeA',
 			)
 			.then(() => {
 				setShowSuccess(true);
@@ -32,7 +32,7 @@ const QuestionItem = ({ question }: { question: string }) => {
 				setShowError(true);
 				setTimeout(() => {
 					setShowError(false);
-					navigator.clipboard.writeText('y.abouelomoum09@gmail.com');
+					navigator.clipboard.writeText('younes@abouelomoum.com');
 					setShowCopyToClipBoard(true);
 					setTimeout(() => setShowCopyToClipBoard(false), 4000);
 				}, 2000);

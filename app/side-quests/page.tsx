@@ -36,7 +36,7 @@ export default function SideQuests() {
 		{ text: 'stand on both hands' },
 		{ text: 'juggle with 3 balls' },
 		{ text: 'play a poker tournament' },
-		{ text: 'shoot a real gun' },
+		{ text: 'shoot a real gun', done: true },
 		{ text: 'finish a marathon under 3h30' },
 		{ text: 'learn to dance salsa' },
 		{ text: 'finish an ironman under 12h' },

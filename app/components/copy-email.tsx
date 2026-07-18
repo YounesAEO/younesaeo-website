@@ -8,7 +8,7 @@ const CopyEmail = ({ text = 'email', className = '' }) => {
 
 	const handleEmailClick = (e: React.MouseEvent) => {
 		e.preventDefault();
-		navigator.clipboard.writeText('y.abouelomoum09@gmail.com');
+		navigator.clipboard.writeText('younes@abouelomoum.com');
 		setShowToast(true);
 		setTimeout(() => setShowToast(false), 2000);
 	};
