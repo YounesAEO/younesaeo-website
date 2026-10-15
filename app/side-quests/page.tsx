@@ -102,7 +102,7 @@ export default function SideQuests() {
 			text: 'build my dream computer',
 		},
 		{
-			text: "solve a rubik's cube in under 30 seconds",
+			text: "solve a rubik's cube in under 30 seconds (PR: 1m 54s)",
 		},
 		{
 			text: "spend new year's eve in times square",
